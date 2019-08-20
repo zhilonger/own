@@ -1,0 +1,80 @@
+.Project,.box{
+  width: 100%;
+  height: 100%;
+  .Home{
+    //flex: 1;
+    display: flex;
+    flex-direction: column;
+  .Header{
+    width: 100%;
+    height: 1.8rem;
+    background:linear-gradient(to right,#1dadfc,#1a9bfb,#178bfb);
+  }
+  .Cont{
+    //background: pink;
+    display: flex;
+    flex-direction: column;
+    .nav{
+      width: 100%;
+      height: 3.7rem;
+      //display: flex;
+      //flex-wrap: wrap;
+      .swiper-container,.swiper-wrapper {
+        width: 100%;
+        height: 100%;
+        .swiper-slide{
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-around;
+          align-items: center;
+          .one{
+            width: 25%;
+            height: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            img{
+              width: 1.3rem;
+              height: 1.1rem;
+            }
+            p{
+              font-size: .22rem;
+            }
+          }
+        }
+      }
+    }
+  }
+  }
+  .Footer{
+    width: 100%;
+    height: .95rem;
+    background: #fff;
+    border-top: .03rem solid #ededed;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    div{
+      width: .5rem;
+      height: .7rem;
+      background: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      img{
+        width: .4rem;
+        height: .4rem;
+      }
+      p{
+        font-size: .2rem;
+        color: #727272;
+      }
+    }
+  }
+}

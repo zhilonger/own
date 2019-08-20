@@ -1,0 +1,80 @@
+#components-form-demo-normal-login .login-form {
+  max-width: 300px; }
+
+#components-form-demo-normal-login .login-form-forgot {
+  float: right; }
+
+#components-form-demo-normal-login .login-form-button {
+  width: 100%; }
+
+.admin_box {
+  width: 100%;
+  height: 100%; }
+
+.admin_login {
+  width: 100%;
+  height: 500px;
+  background: url("./img/img_login/login_bg.png") no-repeat center center;
+  background-size: 100%;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0; }
+  .admin_login .login_center {
+    position: relative;
+    width: 450px;
+    height: 500px;
+    background: #fff;
+    border: 1px solid #aaa;
+    border-top: 14px solid #409eff;
+    box-sizing: border-box;
+    border-radius: 5px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .admin_login .login_center > .login_logo {
+      width: 100%;
+      height: 145px; }
+    .admin_login .login_center > .login_see {
+      width: 30px;
+      height: 30px;
+      position: absolute;
+      right: 55px;
+      bottom: 188px; }
+    .admin_login .login_center > form {
+      width: 100%;
+      height: 100%;
+      margin-top: 30px;
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .admin_login .login_center > form div {
+        width: 80%;
+        height: 12%; }
+      .admin_login .login_center > form .alert1 {
+        width: 100%;
+        height: 100%; }
+      .admin_login .login_center > form input {
+        width: 80%;
+        height: 45px;
+        border: 1px solid #dcdfe6;
+        box-sizing: border-box;
+        border-radius: 5px;
+        font-size: 18px; }
+      .admin_login .login_center > form .login_user {
+        background: url("./img/img_login/login_user.png") no-repeat 2% center;
+        text-indent: 2em; }
+      .admin_login .login_center > form .login_pass {
+        background: url("./img/img_login/login_pass.png") no-repeat 2% center;
+        text-indent: 2em; }
+      .admin_login .login_center > form a {
+        display: block;
+        width: 80%;
+        height: 50px; }
+      .admin_login .login_center > form .login_btn {
+        width: 80%;
+        background: #409eff;
+        color: white; }

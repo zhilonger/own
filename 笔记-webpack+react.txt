@@ -1,0 +1,227 @@
+1、什么是 webpack
+    1. 定义：
+          WebPack是前端资源模块化管理和打包工具。
+
+    2. 特点和优势：
+          1. 它可以将许多松散的模块按照依赖和规则打包成符合生产环境部署的前端资源。
+          2. 可以将按需加载的模块进行代码分隔，等到实际需要的时候再异步加载。(懒加载)
+          3. 可以找到javascript模块及其他浏览器不能直接运行的扩展语言
+               （Scss、TypeScript、Es6、jsx等），并将其打包为合适的格式以供浏览器使用
+
+2、Webpack 4个核心概念
+          1. entry: 定义一个入口文件，读取编译（转译）这个文件。
+          2. output: 输出（编译好）一个打包之后的文件。
+                ①. module.rules: 是一个数组，数组里面的每个对象，来定义转译规则
+                      a. test:是一个正则表达式，用来声明要处理哪些文件
+                      b. use:使用什么转换器，来转换成什么
+          3. loader：模块转换器
+                presets：声明要转化为什么语法
+          4.plugins：扩展插件，使用时new一下
+
+3、Webpack 安装
+    1. 全局安装
+          npm install -g webpack
+    2. 安装到项目目录
+          npm install --save-dev webpack
+    3. 安装指定版本
+          npm install webpack@版本号 --save-dev
+
+
+4、React
+    定义：用于构建用户界面的JAVASCRIPT库，主要用于构建UI，类似于MVC中的V(视图)
+    特点：
+        1. 基于虚拟 DOM            高效，最大限度减少与DOM的交互
+        2. 声明式设计／渲染          可以轻松描述应用
+        3. 响应式，组件化开发        灵活，可与已知的框架很好的配合
+        4. 单向数据流
+        5. jsx语法 纯JS开发 渲染速度快性能高
+    组件特点：
+        使代码更容易得到复用，能够很好的应用在大项目的开发中
+    react起源：
+        Facebook的内部项目
+    react定义初始状态：
+        getInitialState(){
+          return {a:10}
+        }
+
+5、jsx
+    1.定义：
+        js和xml的拓展语法，内部使用js实现，用它来实现react的虚拟DOM。
+    2.特点：
+        a. jsx 执行更快，因为它在编译为 JavaScript 代码后进行了优化。
+        b. 它是类型安全的，在编译过程中就能发现错误。
+        c. 使用 jsx 编写模板更加简单快速。
+        d. 可以创建虚拟DOM
+    3.注意事项
+        a. return()返回多个html元素，必须只能有一个父级元素
+        b. jsx里使用class命名时必须用className代替
+        c. 支持使用{}放置简单的表达式
+
+6、函数组件&&类组件
+    1. 函数组件    无状态组件/展示组件
+         主要用来定义模板，接收来自父组件props传递过来的数据，
+         使用{props.xxx}的表达式把props塞到模板里面。
+         无状态组件应该保持模板的纯粹性，以便于组件复用。
+
+    2.类组件     有状态组件/容器组件
+         主要用来定义交互逻辑和业务数据
+         使用{this.state.xxx}的表达式把业务数据挂载到容器组件的实例上
+
+            a. 继承于React.Component
+            b. 添加一个constructor构造函数，
+                 必须有一个super()
+                 接着为this.state赋值
+            c. 始终使用props参数来调用父类的构造函数
+
+7、组件通信
+    1. 父传子
+        a. 在父组件中使用子组件时，在子组件中声明一个变量 = 一个要传递的值  <A name='123'>
+        b. 在子组件中使用this.props.变量名
+
+   2. 子传父
+        a. 在子组件的props上添加一个方法，方法的参数就是要传递的数据       this.props.send('数据')
+        b. 在父组件调用子组件时，在子组件上声明这个props传递过来的方法名   <子 send={方法}> </子>
+
+   3. 深度嵌套(跨组件)通信   (context多层嵌套组件的通信)
+        a. 安装引入 prop-types 用于context声明数据时的类型验证
+        b. 在父组件中声明context数据
+            ①. 使用 childContextTypes 做类型验证
+            ②. 使用 getChildContext   声明数据
+        c. 在子组件中，使用contextTypes做类型验证，使用this.context.变量名
+        d. 子向父传递数据时，
+            ①. 使用contextTypes 做类型验证
+            ②. 使用父组件中context里声明的那个函数，this.context.函数名(要传递的参数)
+
+   4. 兄弟组件通信   ( events )
+        a. 创建一个event.js文件，在文件中导入events，导出一个new EventEmitter对象
+        b. 接收数据的组件中导入event.js，使用  ev.addListener(事件名，处理函数) 方法接收数据
+        c. 发送数据的组件中导入event.js，使用  ev.emit('事件名','数据') 方法发送数据
+
+   5. props设置初始值:
+        组件名.defaultProps = {msg:'hello'}
+
+8、通信事件处理
+    1. 命名  使用on事件名1on
+    2. 使用bind改变this指向
+    3. 不写参数时，默认第一个参数就是事件对象
+    4. 既传递参数，又想获得事件对象，可以使用箭头函数来绑定，参数e就是事件对象
+    5. 在constructor里面使用bind绑定this时传参，事件对象event永远通过最后一个参数来获取
+
+9、受控组件&&非受控组件
+    1. 受控组件      出场自带固定属性
+          解决：加onChange写法
+                <input type="text" value={this.state.val} onChange={(e)=>this.fnChange(e)} />
+          表单元素 如input 把state的数据渲染到input中，
+          再通过onChange事件修改this.state.val的值，叫做受控组件
+
+    2. 非受控组件     <input type='text' onChange={...} />
+
+          通过onChange 得到输入框的值
+
+10、children
+    父组件使用子组件时，可以传递一些标签元素。
+    在子组件中，使用this.props.children来接收这些标签。和vue中的插槽效果类似
+
+11、生命周期
+    componentWillMount          组件将要被渲染到页面
+    componentDidMount           组件已经被渲染到页面，可以在这个函数中调用ajax
+    componentWillUpdate         数据将要更新
+    componentDidUpdate          数据更新完成
+    shouldComponentUpdate       数据将要更新时调用。必须返回一个bool值，
+                                    返回true代表允许组件更新，执行render函数
+                                    返回false代表阻止组件更新，不调用render函数
+                                    用于做性能优化，如点击同一菜单栏所请求的渲染内容一致，则无需重新渲染，return false即可
+    componentWillReceiveProps   当组件接收到新的props值的时候会自动调用
+                                    注意：父组件的数据更新，也会调用子组件的componentWillReceiveProps
+
+    componentWillUnmount        组件被删除(卸载)时调用
+                                    如第一个页面的onClick事件后跳转/渲染到第2个页面，之后这个onClick已经不需要再用
+                                    这些挂载到window上的方法，会一直存在，此时可以用到此函数
+                                    进行删除/卸载，以优化性能
+
+12、组件生命周期的不同阶段是什么?
+      1. Mounting: 组件已准备好挂载到浏览器的 DOM 中.
+           此阶段包含来自
+              constructor(), getDerivedStateFromProps(), render(), 和 componentDidMount()
+      2. Updating: 在此阶段，组件以两种方式更新，发送新的属性并使用 setState() 或 forceUpdate() 方法更新状态.
+           此阶段包含
+              getDerivedStateFromProps(), shouldComponentUpdate(), render(),
+              getSnapshotBeforeUpdate() 和 componentDidUpdate()
+      3. Unmounting: 在这个最后阶段，不需要组件，它将从浏览器 DOM 中卸载。
+             这个阶段包含 componentWillUnmount()
+
+13、路由
+    exact   精准匹配
+    Switch  只显示里面的路由规则，其他组件都不显示
+
+    BrowerRouter history    不带# 但是需要后端配置路径，上线时后台需要配置路径
+    HashRouter              hash模式  带#  项目打包和上线时比较方便，不需要修改配置文件
+
+    Route     设置路由规则
+    Redirect  路由重定向，可以设置默认路由
+
+14、路由传参
+      1. Route规则里 path              配置参数
+      2. Link里  to='/detail/参数'     传递参数
+      3. this.props.match.params      接收参数
+
+15、编程跳转
+      window.location.href = '/order'
+
+16、NavLink
+      可以设置activeClassName   用于导航的激活状态的样式切换
+
+17、redux
+    action    定义操作redux数据的方法
+    reducers  定义数据，处理逻辑
+    store     导出定义好的数据
+
+18、redux使用过程
+    1. 在index中引入 react-redux，引入Provider和store
+          语法：  <Provider store={store}>
+                      <App />
+                  </Provider>,
+          解释: 使用Provider 将根组件和 store 关联起来，之后根组件中的所有组件都能使用store中的数据
+
+    2. 在某个组件 如ComA中 使用redux的数据
+         引入 connect
+         引入 bindActionCreators
+         引入 action
+
+        语法：
+          function mapStateToProps(state) { 引入我们定义好的 store数据}
+          function mapDispatchToProps(dispatch) {引入action 定义的事件}
+
+          export default connect(//依赖注入
+              mapStateToProps, mapDispatchToProps
+          )(A)
+
+          this.props 中就可以使用redux  数据 和 方法
+
+        解释：
+          使用 connect将 mapStateToProps, mapDispatchToProps两个函数依赖注入到 ComA 中
+          这样ComA 组件才可以使用 mapStateToProps引入的数据 和 mapDispatchToProps引入的方法
+
+19、redux详解
+    1. 什么是redux
+        redux是状态管理，把多个组件之间需要共享的数据统一管理
+    2. 如何使用redux
+        a. 在index.js入口文件中通过provider组件引入store数据，
+        b. 在某个组件中使用redux数据时，使用connect在组件中注入两个方法
+              mapStateProps()        将store的数据引入
+              mapDispatchToProps()   将action中的方法引入
+        c. 在组件中的props属性上，就可以使用这些数据和方法
+    3. redux运行过程
+        当调用一个action的方法时，action会返回一个对象，里面有type和data属性，
+            types 是一个字符串，用来匹配到reducers里面具体对应的方法
+            data  是调用该方法传递的数据和参数
+        reducers里面通过switch case判断传递过来的type类型，
+        然后选择处理逻辑，最后返回一个新的state
+
+
+20、axios设置请求头，携带cookie / token  (默认不携带)
+      1. 为什么要携带
+            当登录成功时，后台会返回一个token作为登录凭证。有此token，请求其他接口时后台才会给予权限
+      2. 如何携带
+
+

@@ -1,0 +1,117 @@
+.commodityList p, .commodityList th, .commodityList td {
+  margin: 0;
+  padding: 0; }
+.commodityList .ant-advanced-search-form {
+  padding: 12px 24px;
+  border: 1px solid #d9d9d9;
+  border-radius: 4px; }
+.commodityList .ant-advanced-search-form .ant-form-item {
+  width: 80%;
+  display: flex; }
+.commodityList .ant-advanced-search-form .ant-form-item-control-wrapper {
+  flex: 1; }
+.commodityList .ant-advanced-add-form {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+  .commodityList .ant-advanced-add-form > p {
+    margin: 0; }
+.commodityList .ant-table-body > table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+  border-radius: 4px; }
+  .commodityList .ant-table-body > table th, .commodityList .ant-table-body > table td {
+    font-size: 14px;
+    border: 1px solid #d9d9d9; }
+  .commodityList .ant-table-body > table .ant-table-thead > tr > th {
+    padding: 0;
+    height: 45px; }
+  .commodityList .ant-table-body > table th {
+    color: #909399; }
+    .commodityList .ant-table-body > table th > span {
+      display: block;
+      width: 100%;
+      text-align: center;
+      font-weight: bold;
+      color: #909399; }
+  .commodityList .ant-table-body > table td {
+    height: 185px;
+    height: 145px;
+    text-align: center;
+    color: #606266; }
+    .commodityList .ant-table-body > table td:nth-of-type(1) {
+      width: 43px; }
+    .commodityList .ant-table-body > table td:nth-of-type(2) {
+      width: 93px; }
+    .commodityList .ant-table-body > table td:nth-of-type(3) {
+      width: 103px; }
+    .commodityList .ant-table-body > table td:nth-of-type(4) {
+      width: 203px; }
+      .commodityList .ant-table-body > table td:nth-of-type(4) > div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; }
+        .commodityList .ant-table-body > table td:nth-of-type(4) > div p {
+          margin-top: 10px; }
+    .commodityList .ant-table-body > table td:nth-of-type(5) {
+      width: 118px; }
+    .commodityList .ant-table-body > table td:nth-of-type(6) {
+      width: 143px; }
+      .commodityList .ant-table-body > table td:nth-of-type(6) > div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; }
+        .commodityList .ant-table-body > table td:nth-of-type(6) > div > p {
+          margin-top: 5px; }
+    .commodityList .ant-table-body > table td:nth-of-type(7) {
+      width: 93px; }
+    .commodityList .ant-table-body > table td:nth-of-type(8) {
+      width: 88px; }
+      .commodityList .ant-table-body > table td:nth-of-type(8) > div {
+        width: 40px;
+        height: 40px;
+        margin: 0 auto;
+        line-height: 40px;
+        background: #409eff;
+        border-radius: 50%;
+        cursor: pointer; }
+        .commodityList .ant-table-body > table td:nth-of-type(8) > div:hover {
+          opacity: 0.8; }
+        .commodityList .ant-table-body > table td:nth-of-type(8) > div i {
+          color: white; }
+    .commodityList .ant-table-body > table td:nth-of-type(9) {
+      width: 93px; }
+    .commodityList .ant-table-body > table td:nth-of-type(10) {
+      width: 94px; }
+    .commodityList .ant-table-body > table td:nth-of-type(11) {
+      width: 158px; }
+      .commodityList .ant-table-body > table td:nth-of-type(11) > div {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; }
+        .commodityList .ant-table-body > table td:nth-of-type(11) > div p {
+          width: 100%;
+          margin-top: 10px;
+          display: flex;
+          justify-content: space-around;
+          align-items: center; }
+    .commodityList .ant-table-body > table td .edit {
+      margin: 0 auto;
+      width: 40px;
+      height: 40px;
+      background: #409eff;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 40px;
+      font-size: 14px;
+      color: #fff;
+      cursor: pointer; }
+      .commodityList .ant-table-body > table td .edit:hover {
+        opacity: 0.8; }

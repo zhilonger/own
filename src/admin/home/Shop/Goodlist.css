@@ -1,0 +1,266 @@
+.com-search {
+    width: 1260px;
+    height: 180px;
+    border: 1px solid RGB(235, 238, 245);
+    margin: 20px auto;
+  }
+  
+  
+  .search-result {
+    width: 1230px;
+    height: 35px;
+    margin: 10px auto;
+  }
+  
+  
+  .search-result div:nth-child(1) {
+    font-size: 18px;
+    float: left;
+  }
+  
+  
+  .search-result div:nth-child(3) {
+    float: right;
+  }
+  
+  
+  .search-result div:nth-child(3) button {
+    width: 55px;
+    height: 32px;
+    background: none;
+    border: 1px solid RGB(235, 238, 245);
+    margin-right: 20px;
+  }
+  
+  
+  .search-result div:nth-child(2) {
+    float: right;
+  }
+  
+  
+  .search-result div:nth-child(2) button {
+    width: 84px;
+    height: 32px;
+    background: RGB(64, 158, 255);
+    border-radius: 3px;
+    border: none;
+    color: RGB(235, 238, 245);
+  }
+  
+  
+  .searchcategory {
+    width: 1060px;
+    height: 90px;
+    margin: 0 auto;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  
+  .searchcategory li {
+    width: 300px;
+    height: 35px;
+    display: flex;
+    margin-top: 5px;
+  }
+  
+  
+  .searchcategory li p {
+    line-height: 35px;
+  }
+  
+  
+  .searchcategory li .input-1 {
+    width: 220px;
+    margin-left: 10px;
+  }
+  
+  
+  .numlist {
+    width: 1260px;
+    height: 60px;
+    border: 1px solid RGB(235, 238, 245);
+    margin: 25px auto;
+  }
+  
+  
+  .com-table {
+    width: 1260px;
+    margin: 0 auto;
+    border: 1px solid RGB(235, 238, 245);
+  }
+  
+  
+  .com-table thead {
+    border: 1px solid RGB(235, 238, 245);
+  }
+  
+  
+  .com-table thead td {
+    border: 1px solid RGB(235, 238, 245);
+    text-align: center;
+    height: 50px;
+  }
+  
+  
+  .com-table tbody {
+    border: 1px solid RGB(235, 238, 245);
+  }
+  
+  
+  .com-table tbody td {
+    border: 1px solid RGB(235, 238, 245);
+    text-align: center;
+    height: 150px;
+  }
+  
+  
+  .com-table tbody td img {
+    height: 80px;
+    width: 70px;
+  }
+  
+  
+  .com-table tbody td .ppbut button {
+    width: 55px;
+    height: 32px;
+    background: none;
+    border: 1px solid RGB(235, 238, 245);
+  }
+  
+  
+  .com-table tbody td .ppbut button:nth-child(2) {
+    margin-left: 10px;
+  }
+  
+  
+  .com-table tbody td:nth-child(1) {
+    width: 60px;
+  }
+  
+  
+  .com-table tbody td:nth-child(2) {
+    width: 100px;
+  }
+  
+  
+  .com-table tbody td:nth-child(3) {
+    width: 120px;
+  }
+  
+  
+  .com-table tbody td:nth-child(3) {
+    width: 175px;
+  }
+  
+  
+  .com-table tbody td:nth-child(4) {
+    width: 120px;
+  }
+  
+  
+  .com-table tbody td:nth-child(5) {
+    width: 140px;
+  }
+  
+  
+  .com-table tbody td:nth-child(6) {
+    width: 100px;
+  }
+  
+  
+  .com-table tbody td:nth-child(7) {
+    width: 100px;
+  }
+  
+  
+  .com-table tbody td:nth-child(8) {
+    width: 120px;
+  }
+  
+  
+  .com-table tbody td:nth-child(9) {
+    width: 100px;
+  }
+  
+  
+  .com-table tbody td:nth-child(10) {
+    width: 100px;
+  }
+  
+  
+  .com-table tbody td:nth-child(11) {
+    width: 130px;
+  }
+  
+  
+  .circle {
+    font-size: 39px;
+    color: RGB(64, 158, 255) !important;
+  }
+  
+  
+  .com-paff {
+    margin-top: 30px !important;
+  }
+  
+  
+  .com-paff button {
+    height: 20px !important;
+  }
+  
+  
+  .com-conter {
+    height: 60px;
+  }
+  
+  
+  .ant-menu ant-menu-dark ant-menu-root ant-menu-inline {
+    position: fixed !important;
+    top: 0px;
+    width: 100% !important;
+  }
+  
+  
+  .ant-layout-sider-children {
+    position: fixed !important;
+    top: 0px;
+  }
+  
+  
+  .ant-menu-item ant-menu-item-selected {
+    width: 100% !important;
+  }
+  
+  
+  .ant-layout-sider-children {
+    width: 180px !important;
+  }
+  
+  
+  .ant-menu-item {
+    width: 100% !important;
+  }
+  
+  
+  .ant-menu ant-menu-sub ant-menu-inline {
+    width: 100% !important;
+  }
+  
+  
+  .ant-menu-submenu ant-menu-submenu-inline ant-menu-submenu-open {
+    width: 100% !important;
+  }
+  
+  
+  .ant-layout-sider ant-layout-sider-dark {
+    flex: 0 0 200px !important;
+    max-width: 102px !important;
+    min-width: 181px !important;
+    width: 132px !important;
+  }
+  .ant-layout-content{
+    background: #fff;
+  }

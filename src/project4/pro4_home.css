@@ -1,0 +1,46 @@
+.pro_home {
+  width: 100%;
+  height: 100%; }
+  .pro_home > p {
+    text-align: center; }
+  .pro_home .pro_sizes {
+    width: 100%;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .pro_home .pro_sizes > p {
+      font-size: .16rem;
+      line-height: .6rem;
+      text-align: center;
+      width: .6rem;
+      height: .6rem;
+      border-radius: 50%;
+      background: #f1f1f1;
+      margin: .2rem; }
+    .pro_home .pro_sizes .ac {
+      background: #000;
+      color: #fff; }
+  .pro_home .pro_list {
+    margin-top: .5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; }
+    .pro_home .pro_list > .list_one {
+      font-size: .26rem;
+      width: 45%;
+      height: 5rem;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+      .pro_home .pro_list > .list_one > img {
+        width: 100%; }
+      .pro_home .pro_list > .list_one .price {
+        font-size: .34rem;
+        font-weight: bold; }
+  .pro_home .pro_cart {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }

@@ -1,0 +1,144 @@
+.box_Pro {
+  width: 100%;
+  height: auto;
+  background: #ececec; }
+  .box_Pro header {
+    width: 100%;
+    height: 100px;
+    background: #000; }
+    .box_Pro header .buyCarHover {
+      width: 300px;
+      height: 300px;
+      overflow: auto;
+      border: 1px solid grey;
+      border-radius: 10px;
+      background: #f2f2f2;
+      position: absolute;
+      right: 0px;
+      top: 75px; }
+      .box_Pro header .buyCarHover .by_box {
+        width: 100%;
+        margin-bottom: 10px;
+        background: #fff;
+        border-bottom: 1px solid #fff;
+        border-radius: 10px 10px 0 0;
+        display: flex;
+        justify-content: space-around;
+        align-items: center; }
+        .box_Pro header .buyCarHover .by_box img {
+          width: 80px;
+          height: 80px; }
+        .box_Pro header .buyCarHover .by_box > ul {
+          width: 200px; }
+          .box_Pro header .buyCarHover .by_box > ul > li {
+            font-size: 12px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            width: 100%;
+            height: 20px; }
+    .box_Pro header > .head {
+      width: 80%;
+      height: 100%;
+      margin: 0 auto;
+      position: relative; }
+      .box_Pro header > .head > .buyCar {
+        width: 165px;
+        height: 40px;
+        float: right;
+        margin: 30px 0px;
+        border-left: 1px solid #353535;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        .box_Pro header > .head > .buyCar > span {
+          font-size: 20px;
+          font-weight: bold;
+          color: #fff; }
+        .box_Pro header > .head > .buyCar > div {
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          background: #979797;
+          color: #fff;
+          font-size: 20px;
+          font-weight: bold;
+          text-align: center;
+          line-height: 40px;
+          margin-left: 10px; }
+  .box_Pro .nav {
+    width: 80%;
+    height: 60px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center; }
+    .box_Pro .nav > li {
+      height: 60px;
+      padding: 0 20px;
+      font-size: 20px;
+      line-height: 60px;
+      cursor: pointer; }
+    .box_Pro .nav > .active {
+      color: #527ec0; }
+  .box_Pro .cont {
+    width: 80%;
+    height: 430px;
+    background: #fff;
+    margin: 0 auto;
+    border: 2px solid #d5d5d5;
+    border-radius: 10px;
+    overflow: hidden; }
+    .box_Pro .cont .box_Product {
+      width: 305px;
+      height: 430px;
+      border-right: 1px solid #ececec;
+      float: left;
+      display: flex;
+      text-align: center;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center; }
+      .box_Pro .cont .box_Product img {
+        width: 235px;
+        height: 235px; }
+      .box_Pro .cont .box_Product .p1 {
+        font-size: 16px;
+        font-weight: bold; }
+      .box_Pro .cont .box_Product .p2 {
+        font-size: 12px;
+        color: #cecece; }
+      .box_Pro .cont .box_Product .p3 {
+        height: 35px;
+        font-size: 22px;
+        color: #cb031a; }
+        .box_Pro .cont .box_Product .p3 span {
+          font-size: 18px; }
+      .box_Pro .cont .box_Product .p5 button {
+        font-size: 12px;
+        margin: 0 3px;
+        padding: 2px 10px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        border-radius: 20px; }
+      .box_Pro .cont .box_Product .p5 .ac {
+        background: #1dadfc;
+        color: #fff; }
+      .box_Pro .cont .box_Product .p4 {
+        height: 35px; }
+        .box_Pro .cont .box_Product .p4 button {
+          width: 100px;
+          height: 30px;
+          border: 1px solid #d2d2d2;
+          box-sizing: border-box;
+          border-radius: 3px;
+          font-size: 13px;
+          cursor: pointer; }
+        .box_Pro .cont .box_Product .p4 .check {
+          background: #fff;
+          color: #aaa; }
+        .box_Pro .cont .box_Product .p4 .join {
+          color: #fff;
+          background: linear-gradient(to bottom, #6b90e7, #597bdc);
+          margin-left: 15px; }

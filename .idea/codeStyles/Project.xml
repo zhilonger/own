@@ -1,0 +1,16 @@
+<component name="ProjectCodeStyleConfiguration">
+  <code_scheme name="Project" version="173">
+    <option name="OTHER_INDENT_OPTIONS">
+      <value>
+        <option name="INDENT_SIZE" value="2" />
+      </value>
+    </option>
+    <JSCodeStyleSettings version="0">
+      <option name="ENFORCE_TRAILING_COMMA" value="Remove" />
+      <option name="IMPORTS_WRAP" value="0" />
+    </JSCodeStyleSettings>
+    <XML>
+      <option name="XML_LEGACY_SETTINGS_IMPORTED" value="true" />
+    </XML>
+  </code_scheme>
+</component>

@@ -1,0 +1,55 @@
+.AdminWeb_home{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  .home_side{
+    width: 13%;
+    height: 100%;
+    >ul{
+      height: 100%;
+      background: #304156;
+    }
+  }
+    .homeCont_side{
+      width: 100%;
+      height: 50px;
+      border-bottom: 1px solid #aaa;
+      box-sizing: border-box;
+      font-size: 16px;
+      display: flex;
+      align-items: center;
+      >i{
+        margin-left: 10px;
+      }
+      >span{
+        margin-left: 10px;
+      }
+      //text-indent: 2em;
+    }
+  .ant-layout{
+    background: none;
+
+    #sub2,.ant-menu{
+      height: 100%;
+      background: #304156;
+      .ant-menu-item:not(:last-child){
+        margin: 0;
+      }
+      .ant-menu-item{
+        //background: #1f2d3d;
+      }
+      .ant-menu-submenu-active{
+        background: #1f2d3d;
+      }
+      .ant-menu-item-active{
+        background: #1f2d3d;
+      }
+      .ant-menu-item-selected{
+        background: #1f2d3d;
+        span,a{
+          color:#287fff;
+        }
+      }
+    }
+}
+}

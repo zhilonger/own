@@ -1,0 +1,242 @@
+#components-layout-demo-custom-trigger .trigger {
+  font-size: 18px;
+  line-height: 64px;
+  padding: 0 24px;
+  cursor: pointer;
+  transition: color 0.3s; }
+
+#components-layout-demo-custom-trigger .trigger:hover {
+  background: #263445; }
+
+#components-layout-demo-custom-trigger .logo {
+  height: 32px;
+  background: rgba(255, 255, 255, 0.2);
+  margin: 16px; }
+
+.Sider {
+  text-align: center;
+  padding-top: 15px;
+  color: #A6ADB4; }
+
+a {
+  color: #A6ADB4; }
+
+.apple {
+  font-size: 28px;
+  color: black;
+  margin-left: 89%; }
+
+.down {
+  margin-left: 0.5%; }
+
+.sign {
+  width: 68px;
+  height: 105px;
+  position: absolute;
+  right: 25px;
+  top: 83px;
+  border-radius: 10px;
+  background: white;
+  box-shadow: #F4F4F4 10px 10px 30px 5px; }
+
+.sign > div {
+  width: 100%;
+  height: 52.5px;
+  text-align: center;
+  line-height: 52.5px;
+  border-bottom: 1px solid #F4F4F4; }
+
+.sign > a > div {
+  width: 100%;
+  height: 52.5px;
+  text-align: center;
+  line-height: 52.5px;
+  color: #776266; }
+
+.Home-right {
+  width: 100%;
+  flex-grow: 1;
+  overflow: initial; }
+  .Home-right .header {
+    display: flex;
+    align-items: center; }
+    .Home-right .header > .ant-breadcrumb {
+      display: flex;
+      align-items: center; }
+
+.content {
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 60px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box; }
+
+.module1 {
+  width: 100%;
+  height: 249px;
+  display: flex; }
+
+.item {
+  width: 75%;
+  height: 240px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; }
+
+.item-small {
+  width: 31%;
+  height: 110px;
+  margin-bottom: 16px;
+  border: 1px solid #DCDFE6; }
+
+.font1 {
+  width: 100%;
+  height: 48px;
+  background: #F2F6FC;
+  padding-left: 25px;
+  line-height: 48px;
+  font-size: 16px;
+  color: #776266;
+  font-weight: 600; }
+
+.font2 {
+  width: 100%;
+  height: 60px;
+  padding-left: 25px;
+  line-height: 60px;
+  color: #40B8FF;
+  font-size: 19px;
+  font-weight: 600; }
+
+.item-small2 {
+  width: 31%;
+  height: 110px;
+  display: flex;
+  margin-bottom: 20px;
+  border: 1px solid #DCDFE6; }
+
+.icon {
+  width: 25%;
+  height: 100%;
+  font-size: 65px;
+  padding-top: 5px;
+  padding-left: 10px;
+  color: #40B8FF; }
+
+.font3 {
+  width: 75%;
+  height: 100%;
+  padding-left: 10px; }
+
+.one {
+  width: 100%;
+  height: 60px;
+  font-size: 16px;
+  line-height: 80px; }
+
+.two {
+  font-size: 18px;
+  font-weight: 600; }
+
+.Public {
+  width: 249px;
+  height: 232px;
+  border: 1px solid #EBEEF5;
+  box-shadow: #F4F4F4 10px 10px 30px 5px;
+  margin-left: 122px; }
+
+.img {
+  width: 130px;
+  height: 130px;
+  margin: 0 auto;
+  margin-top: 30px; }
+
+.img > img {
+  width: 100%;
+  height: 100%; }
+
+.title {
+  width: 100%;
+  padding-left: 33px;
+  padding-right: 27px;
+  font-size: 15.5px; }
+
+.title > span {
+  color: #40B8FF; }
+
+.module2 {
+  width: 98.2%;
+  height: 235px;
+  margin: 0 auto;
+  margin-top: 10px;
+  border: 1px solid #DCDFE6; }
+
+.module-top {
+  width: 100%;
+  height: 48px;
+  background: #F2F6FC;
+  padding-left: 25px;
+  line-height: 48px;
+  font-size: 16px;
+  color: #776266;
+  font-weight: 600; }
+
+.module-bot {
+  width: 95%;
+  height: 177px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  padding-top: 20px;
+  justify-content: space-around; }
+
+.bot-item {
+  width: 30%;
+  height: 40px;
+  display: flex;
+  font-size: 16px;
+  padding-top: 10px;
+  padding-left: 15px;
+  position: relative;
+  border-bottom: 1px solid #EBEEF5; }
+
+.bot-item > span {
+  position: absolute;
+  right: 10px;
+  color: #F56C6C; }
+
+.module3 {
+  width: 98.2%;
+  height: 183px;
+  margin: 0 auto;
+  margin-top: 30px;
+  display: flex; }
+
+.module3-item {
+  width: 49%;
+  border: 1px solid #DCDFE6;
+  height: 100%; }
+
+.module3-item:nth-of-type(1) {
+  margin-right: 30px; }
+
+.module3-item > .module-bot {
+  width: 100%;
+  height: 135px;
+  display: flex;
+  padding-top: 30px;
+  justify-content: space-around; }
+
+.module-bot-item {
+  width: 25%;
+  height: 100%;
+  text-align: center; }
+
+.bot-item-num {
+  color: #F56C6C;
+  font-size: 20px;
+  font-weight: 600; }
+
+.bot-item-font {
+  font-size: 18px; }
